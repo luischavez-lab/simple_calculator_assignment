@@ -1,4 +1,5 @@
 """This module contains the calculator functions for the formulas square, tri, lazy caterer, and magic squares"""
+import math
 
 
 def squareNums(n):
@@ -20,6 +21,17 @@ def magicSquares(n):
     """Calculates the magic squares number"""
     return (n * (n**2 + 1)) / 2
 
+def hypotenuse(a, b):
+    """Calculates the hypotenuse of a right triangle"""
+    return math.sqrt(a**2 + b**2)
+
+def factorial(n):
+    """Calculates the factorial of n"""
+    return math.factorial(n)
+
+def circleArea(r):
+    """Calculates the area of a circle given radius r"""
+    return math.pi * r**2
 
 def run_calculator(input_formula, input_num):
     """Calls and returns results for the specified formulas"""
